@@ -10,12 +10,12 @@ const Form = () => {
   }, []);
   return (
     <div>
-      <input type="text" placeholder="enter something" />
+      <input ref={inputRef} type="text" placeholder="enter something" />
       <br />
       <input type="text" placeholder="enter something 1" />
       <br />
-      <p> Reusable input with forward ref</p>
-      <Input ref={inputRef} type="text" placeholder="enter something 3" />
+      <p> Reusable input with forward ref, just pass ref=ref</p>
+      <Input type="text" placeholder="enter something 3" />
     </div>
   );
 };
