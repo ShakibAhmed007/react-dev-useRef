@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Input from './Input';
 
 const Form = () => {
   const inputRef = useRef(null);
@@ -9,11 +10,12 @@ const Form = () => {
   }, []);
   return (
     <div>
-      <input ref={inputRef} type="text" placeholder="enter something" />
-      <br/>
+      <input type="text" placeholder="enter something" />
+      <br />
       <input type="text" placeholder="enter something 1" />
-      <br/>
-      <input type="text" placeholder="enter something 2" />
+      <br />
+      <p> Reusable input with forward ref</p>
+      <Input ref={inputRef} type="text" placeholder="enter something 3" />
     </div>
   );
 };
