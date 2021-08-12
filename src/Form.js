@@ -10,7 +10,9 @@ const Form = () => {
   return (
     <div>
       <input ref={inputRef} type="text" placeholder="enter something" />
+      <br/>
       <input type="text" placeholder="enter something 1" />
+      <br/>
       <input type="text" placeholder="enter something 2" />
     </div>
   );
